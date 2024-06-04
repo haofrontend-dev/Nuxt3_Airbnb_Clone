@@ -1,0 +1,7 @@
+import { defineNuxtRouteMiddleware, useRequestFetch } from "nuxt/app";
+import { useUser } from "~/composables/auth";
+
+export default defineNuxtRouteMiddleware(async () => {
+    const user = useUser();
+    if (!user.value) return navigateTo("/login");
+});
