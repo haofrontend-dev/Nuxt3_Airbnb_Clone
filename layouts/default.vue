@@ -1,17 +1,15 @@
 <template>
-  <div>
-    <!-- Navbar -->
-    <Navbar />
-    <div class="pb-20 pt-[220px]">
-      <slot />
+    <div>
+        <!-- Navbar -->
+        <Navbar />
+        <div class="pb-20 pt-[220px]">
+            <slot />
+        </div>
+        <AuthRegister />
+        <AuthLogin />
     </div>
-  </div>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts" setup></script>
 
-</script>
-
-<style>
-
-</style>
+<style></style>
